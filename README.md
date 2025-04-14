@@ -39,8 +39,8 @@ mv .env.example .env
 - Or do it manually:
 
 ```bash
-docker compose -file compose.local.yaml llama_redis -d
-docker compose -file compose.local.yaml llama_app -d
+docker compose --file compose.local.yaml up llama_redis -d
+docker compose --file compose.local.yaml up llama_app -d
 ```
 
 You will see the application running on http://localhost:8000 and you will be able to use it. Depending on your connection and on your hardware, the set up might take some time (up to 15 mins to set up) - but this is only for the first time your run it!

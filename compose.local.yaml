@@ -14,7 +14,7 @@ services:
       - internal_key
       - linkup_key
     ports:
-      - 8000:8000
+      - 8000:80
 
 secrets:
   groq_key:
